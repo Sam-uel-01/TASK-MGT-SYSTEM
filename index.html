@@ -29,47 +29,88 @@
     />
   </head>
   <body class="bg-[#080910] text-white">
-    <!-- NAV BAR -->
-    <div
-      class="flex justify-around md:mr-[5%] md:ml-[5%] lg:justify-between mt-[40px] lg:mr-[10%] lg:ml-[10%]"
-    >
-      <div class="w-[50%] lg:w-[20%] md:w-[25%] md:h-[50px]">
-        <img class="h-[60px]" src="/assets/img/logo.png" alt="" />
-      </div>
+    <!-- NAV BAR BEGINNING-->
+    <div class="sticky top-0 bg-black h-[100px] flex flex-col justify-center pt-[20px]">
       <div
-        class="hidden md:flex justify-center items-center text-[#0D99E8] lg:space-x-32 md:space-x-20"
+        class="flex justify-around md:mr-[5%] md:ml-[5%] lg:justify-between lg:mr-[10%] lg:ml-[10%]"
       >
-        <div class="hover:text-white hover:underline">HOME</div>
-        <div class="hover:text-white hover:underline">ABOUT US</div>
-        <div class="hover:text-white hover:underline">CONTACT US</div>
+      <!-- LOGO -->
+        <div class="w-[50%] lg:w-[20%] md:w-[25%] md:h-[50px]">
+          <img class="h-[60px]" src="/assets/img/logo.png" alt="" />
+        </div>
+        <!-- LOGO -->
+
+        <!-- HAMBURGER ICON -->
+        <div class="flex flex-col justify-center items-center">
+          <div class="block md:hidden">
+            <button id="hamburger_btn">
+              <iconify-icon
+                icon="icon-park-outline:hamburger-button"
+                style="color: #0d99e8"
+                width="40"
+                height="40"
+              ></iconify-icon>
+            </button>
+          </div>
+        </div>
+        <!-- HAMBURGER ICON -->
+
+        <div
+          class="hidden md:flex justify-center items-center text-[#0D99E8] lg:space-x-32 md:space-x-20"
+        >
+          <div class="hover:text-white hover:underline">HOME</div>
+          <div class="hover:text-white hover:underline">ABOUT US</div>
+          <div class="hover:text-white hover:underline">CONTACT US</div>
+        </div>
+        <div
+          class="space-x-2 flex justify-center items-center w-[15%] lg:w-[6%] rounded-lg"
+          style="box-shadow: 10px 10px 60px rgba(211, 209, 209, 0.136)"
+        >
+          <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
+            >Login</a
+          >
+        </div>
       </div>
-      <div
-        class="space-x-2 flex justify-center items-center w-[15%] lg:w-[6%] rounded-lg"
-        style="box-shadow: 10px 10px 60px rgba(211, 209, 209, 0.155)"
-      >
+
+      <!-- HIDDEN NAV_MENU -->
+      <div id="menu_items" class="hidden flex flex-row justify-around">
+        <a
+          class="text-[#0D99E8] hover:text-white hover:underline active:bg-white"
+          href="/"
+          >HOME</a
+        >
         <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
-          >Login</a
+          >ABOUT US</a
+        >
+        <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
+          >CONTACT US</a
+        >
+      </div>
+      <!-- HIDDEN NAV_MENU -->
+
+      <br />
+
+      <div class="hidden flex justify-around">
+        <a
+          class="text-[#0D99E8] hover:text-white hover:underline active:bg-white"
+          href="/"
+          >HOME</a
+        >
+        <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
+          >ABOUT US</a
+        >
+        <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
+          >CONTACT US</a
         >
       </div>
     </div>
     <br />
-    <div class="flex justify-around md:hidden">
-      <a
-        class="text-[#0D99E8] hover:text-white hover:underline active:bg-white"
-        href="/"
-        >HOME</a
-      >
-      <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
-        >ABOUT US</a
-      >
-      <a class="text-[#0D99E8] hover:text-white hover:underline" href="/"
-        >CONTACT US</a
-      >
-    </div>
-    <br /><br />
+    <!-- NAV BAR ENDING -->
 
     <!-- FIRST SECTION BEGINNING-->
-    <div class="flex flex-col-reverse lg:flex lg:justify-center lg:items-center">
+    <div
+      class="flex flex-col-reverse lg:flex lg:flex-row lg:justify-center lg:items-center lg:mb-[30px]"
+    >
       <div class="mx-[5%] mb-[10%] lg:w-[50%] lg:mb-[0%]">
         <p
           class="text-4xl text-center md:text-6xl lg:text-[50px]"
@@ -95,7 +136,7 @@
           </button>
         </div>
       </div>
-    <br>
+      <br />
       <div
         class="w-[80%] mx-auto lg:w-[60%] lg:flex lg:justify-center lg:items-center lg:h-[400px]"
       >
@@ -115,7 +156,7 @@
 
     <!-- SECOND SECTION START-->
     <div
-      class="flex flex-col gap-10 md:grid grid-cols-2 lg:grid lg:grid-cols-4"
+      class="flex flex-col gap-10 md:grid grid-cols-2 lg:grid lg:grid-cols-4 lg:mb-[30px]"
     >
       <div class="flex mx-auto items-center gap-5">
         <div>
@@ -170,7 +211,7 @@
     <br /><br />
 
     <!-- THIRD SECTION BEGINS -->
-    <div class="lg:flex lg:w-[95%] mx-auto xl:w-[90%]">
+    <div class="lg:flex lg:w-[95%] mx-auto xl:w-[90%] lg:mb-[30px]">
       <div class="mx-auto w-[85%] xl:h-[] xl:w-[70%]">
         <img
           class="opacity-50 rounded-xl lg:h-[100%]"
@@ -222,7 +263,7 @@
     <br />
 
     <!-- FOURTH SECTION BEGINS -->
-    <div class="lg:flex lg:w-[90%] gap-10 w-[60%] mx-auto ">
+    <div class="lg:flex lg:w-[90%] gap-10 w-[60%] mx-auto">
       <div class="">
         <img src="/assets/img/Accept tasks-amico.png" alt="" />
       </div>
@@ -236,5 +277,14 @@
         <img src="/assets/img/Accept tasks-rafiki.png" alt="" />
       </div>
     </div>
+
+    <script>
+      let menu_btn = document.getElementById("hamburger_btn");
+      let menu_items = document.getElementById("menu_items");
+
+      menu_btn.addEventListener("click", function () {
+        menu_items.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
